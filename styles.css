@@ -319,9 +319,9 @@ img {
         border-radius:10px;
     }
 
-    .about-block {
-        padding-left:10px;
-        padding-right:10px;
+    .about-block p{
+        margin-left:10px;
+        margin-right:10px;
     }
 
     .header a, .footer p{
