@@ -259,7 +259,7 @@ img {
     color:#22223B;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .footer p {
         margin-top:4px;
         margin-bottom:4px;
