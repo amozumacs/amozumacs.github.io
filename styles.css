@@ -323,4 +323,8 @@ img {
         padding-left:10px;
         padding-right:10px;
     }
+
+    .header a, .footer p{
+        font-size:12px;
+    }
 }
