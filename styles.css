@@ -312,7 +312,12 @@ img {
     transform-origin: bottom left;
 }
 
-
+.text-side{
+    padding: 10px;
+}
+.image-side {
+    padding:5px;
+}
 @media (max-width: 900px) {
     .footer p {
         margin-top:4px;
