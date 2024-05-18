@@ -1,22 +1,19 @@
 function darkmode() {
     const wasDarkmode = localStorage.getItem('darkmode') === 'true';
     localStorage.setItem('darkmode', !wasDarkmode);
-    const element = document.body;
-    element.classList.toggle('dark-mode', !wasDarkmode);
-
-    document.querySelector('.header-block').classList.toggle('dark-header-block', !wasDarkmode);
-    document.querySelector('.footer').classList.toggle('dark-footer-block', !wasDarkmode);
-    document.querySelectorAll('.content-block').forEach(el => el.classList.toggle('dark-content-block', !wasDarkmode));
+    toggleDarkMode(!wasDarkmode);
 }
 
-function onload() {
-    const isDarkmode = localStorage.getItem('darkmode') === 'true';
+function toggleDarkMode(isDarkmode) {
     document.body.classList.toggle('dark-mode', isDarkmode);
-
     document.querySelector('.header-block').classList.toggle('dark-header-block', isDarkmode);
     document.querySelector('.footer').classList.toggle('dark-footer-block', isDarkmode);
     document.querySelectorAll('.content-block').forEach(el => el.classList.toggle('dark-content-block', isDarkmode));
 }
 
-window.onload = onload;
+function onload() {
+    const isDarkmode = localStorage.getItem('darkmode') === 'true';
+    toggleDarkMode(isDarkmode);
+}
 
+document.addEventListener('DOMContentLoaded', onload);
