@@ -259,6 +259,11 @@ img {
     color:#22223B;
 }
 
+.dark-about-block {
+    background-color: #949393;
+    color: #141416;
+}
+
 @media (max-width: 900px) {
     .footer p {
         margin-top:4px;
