@@ -1,8 +1,8 @@
-
 p{
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Inter', sans-serif;
 }
+
 h1{
     font-size: 36px;;
     font-family: 'Inter', sans-serif;
@@ -32,10 +32,11 @@ h1{
     align-items: center;
 }
 
-.footer .text-side {
+.footer .text-side{
     flex-direction: column; 
     margin-left:80px;
 }
+
 .footer img {
     width:400px;
     height:300px;
@@ -50,8 +51,13 @@ h1{
     gap: 20px;
 }
 
-.header p {
+.header p, .footer p {
     font-size: 16px;
+}
+
+.footer p {
+    margin-top:8px;
+    margin-bottom:8px;
 }
 
 .ui-block {
@@ -259,6 +265,10 @@ img {
     color:#22223B;
 }
 
+.about-block p {
+    padding:50px;
+}
+
 .dark-about-block {
     background-color: #949393;
     color: #141416;
@@ -313,11 +323,27 @@ img {
 }
 
 .text-side{
-    padding: 10px;
+    padding: 40px;
 }
 .image-side {
-    padding:5px;
+    padding: 40px;
 }
+
+.footer .favourite-icons div {
+    margin-right: 10px;
+}
+
+.favourite-icons {
+    margin:50px;
+}
+
+.footer .favourite-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;;
+}
+
 @media (max-width: 900px) {
     .footer p {
         margin-top:4px;
@@ -340,6 +366,7 @@ img {
 
     .header-block {
         min-height: 15vh;
+        flex-shrink:1;
         font-size: 20px;
     }
 
@@ -348,7 +375,7 @@ img {
     }
     
     .text-side {
-        max-height: 30vh;
+        min-height: 30vh;
         font-size:8px;
         margin:8px;
     }
@@ -389,5 +416,17 @@ img {
 
     p {
         font-size:12px;
+    }
+
+    .text-side{
+        padding: 15px;
+    }
+
+    .image-side {
+        padding: 5px;
+    }
+
+    .about-block p {
+        padding:10px;
     }
 }
