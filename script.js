@@ -20,6 +20,8 @@ function toggleDarkMode(isDarkmode) {
             el.classList.toggle('dark-about-block', isDarkmode);
         }
     });
+
+    document.querySelector('.center-item i').classList.toggle('selected-color', isDarkmode);
 }
 
 function onload() {
@@ -28,3 +30,22 @@ function onload() {
 }
 
 document.addEventListener('DOMContentLoaded', onload);
+
+function adjustLayout() {
+    var screenWidth = window.innerWidth;
+
+    if (screenWidth < 340) {
+        var blocks = document.querySelectorAll('.text-side');
+
+        blocks.forEach(function(block) {
+            block.classList.remove('left-side');
+            block.classList.remove('right-side');
+        });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    adjustLayout();
+
+    window.addEventListener('resize', adjustLayout);
+});
