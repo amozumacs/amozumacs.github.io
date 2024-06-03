@@ -348,6 +348,10 @@ img {
     color: #D90429;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+  
 @media (max-width: 900px) {
     .footer p {
         margin-top:4px;
